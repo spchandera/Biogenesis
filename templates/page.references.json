@@ -1,0 +1,535 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "7e72a3d4-faf0-43a8-a287-c52f0af42c00": {
+      "type": "promotion-banner",
+      "blocks": {
+        "template--21376255066413__7e72a3d4-faf0-43a8-a287-c52f0af42c00-image_banner-1": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "Our Perfect Store",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h2",
+            "subheading": "Welcome to Eurus",
+            "text": "Over 20 years of experience, we have crafted thousands of strategicdiscovery process that enables us to peel back the layers which enable us to understand, connectunderstand, connect.",
+            "text_size": 100,
+            "content_box_type": "square",
+            "add_frame": false,
+            "color_content_box_light": "rgba(0,0,0,0)",
+            "color_content_box_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--21376255066413__7e72a3d4-faf0-43a8-a287-c52f0af42c00-image_banner-1"
+      ],
+      "settings": {
+        "heading": "Promotion Banner",
+        "image_link": "",
+        "open_new_window": false,
+        "image_overlay_opacity": 0,
+        "content_position": "center",
+        "content_horizontal": 50,
+        "content_vertical": 50,
+        "position_content_mobile": "center",
+        "content_alignment": "center",
+        "show_hero": false,
+        "full_width": true,
+        "padding_full_width": false,
+        "rounded_corner_image": false,
+        "desktop_height": "650px",
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "full_width_mobile": true,
+        "rounded_corner_image_mobile": false,
+        "mobile_height": "400px",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_heading": true,
+        "heading_size": 170,
+        "heading_tag": "h1",
+        "show_breadcrumbs": true,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-right",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#fbf7f2",
+        "text_color_light": "#202020",
+        "textlink_color_light": "#058942",
+        "background_color_dark": "#fb8500",
+        "text_color_dark": "#058942",
+        "textlink_color_dark": "#ce021e",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "cba3e9a6-5e16-43dc-8224-fa088145ceef": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21376255066413__cba3e9a6-5e16-43dc-8224-fa088145ceef-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "Our Mission",
+            "heading": "Story About Us",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Pretium ligula Vestibulum consequat convallis fringilla Vestibulu nulla.<br/>Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla interdum mauris tempor congue.<br/><br/>Aenean Lorem vitae id. Odio ut pretium ligula quam Vestibulum consequat convallis fringilla Vestibulum nulla. Accumsan morbi tristique auctor. Aenean nulla lacinia Nullam elit vel vel. At risus pretium urna tortor metus fringilla interdum<br/>mauris tempor congue.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--21376255066413__cba3e9a6-5e16-43dc-8224-fa088145ceef-heading-1"
+      ],
+      "settings": {
+        "show_hero": false,
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "image_corner_radius": 10,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "dashed",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "right",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 52,
+        "bottom_padding": 80,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 36,
+        "bottom_padding_mobile": 56
+      }
+    },
+    "31d5bd62-8437-48ea-bfea-212abb02302d": {
+      "type": "rich-text",
+      "blocks": {
+        "b9d30df0-8199-4e23-a466-56d3dedded3c": {
+          "type": "caption",
+          "settings": {
+            "caption": "Why Choose Us",
+            "text_style": "subtitle",
+            "text_size": 100
+          }
+        },
+        "template--21376255066413__31d5bd62-8437-48ea-bfea-212abb02302d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Unique Things",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "template--21376255066413__31d5bd62-8437-48ea-bfea-212abb02302d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pretium ligula Vestibulum consequat convallis fringilla Vestibulu nulla.<br/>Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla interdum mauris tempor congue.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "alt_text_style": false
+          }
+        }
+      },
+      "block_order": [
+        "b9d30df0-8199-4e23-a466-56d3dedded3c",
+        "template--21376255066413__31d5bd62-8437-48ea-bfea-212abb02302d-heading-1",
+        "template--21376255066413__31d5bd62-8437-48ea-bfea-212abb02302d-text-1"
+      ],
+      "settings": {
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "background_color_light": "",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "background_color_dark": "",
+        "content_alignment": "center",
+        "show_section_divider": true,
+        "make_full_page_width": true,
+        "padding_top": 72,
+        "padding_bottom": 20,
+        "content_alignment_mobile": "center",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 12
+      }
+    },
+    "74d09ba9-706f-470b-adbb-065b7409ddd7": {
+      "type": "text-column-with-image",
+      "blocks": {
+        "template--21376255066413__74d09ba9-706f-470b-adbb-065b7409ddd7-column-2": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "open_new_window_image": false,
+            "sub_title": "",
+            "title": "Sustainable Plants",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "text": "<p>Pellentesque eget sem non diam dapibus sagittis vel sed turpis. Donec vulputate nisl non varius suscipit.</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_new_window": false,
+            "show_button_style": "primary"
+          }
+        },
+        "template--21376255066413__74d09ba9-706f-470b-adbb-065b7409ddd7-column-3": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "open_new_window_image": false,
+            "sub_title": "",
+            "title": "Recyclable Plastic",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "text": "<p>Pellentesque eget sem non diam dapibus sagittis vel sed turpis. Donec vulputate nisl non varius suscipit.</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_new_window": false,
+            "show_button_style": "primary"
+          }
+        },
+        "template--21376255066413__74d09ba9-706f-470b-adbb-065b7409ddd7-column-4": {
+          "type": "column",
+          "settings": {
+            "image_link": "",
+            "open_new_window_image": false,
+            "sub_title": "",
+            "title": "Happy Plant Guarantee",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "text": "<p>Pellentesque eget sem non diam dapibus sagittis vel sed turpis. Donec vulputate nisl non varius suscipit.</p>",
+            "button_label": "",
+            "button_link": "",
+            "open_new_window": false,
+            "show_button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--21376255066413__74d09ba9-706f-470b-adbb-065b7409ddd7-column-2",
+        "template--21376255066413__74d09ba9-706f-470b-adbb-065b7409ddd7-column-3",
+        "template--21376255066413__74d09ba9-706f-470b-adbb-065b7409ddd7-column-4"
+      ],
+      "settings": {
+        "title": "",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "secondary_background": "none",
+        "image_ratio": "natural",
+        "rounded_corner_image": true,
+        "column_content_alignment": "center",
+        "background_color_light": "#f6f6f6",
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#2a2a2a",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "enable_desktop_slider": false,
+        "swiper_on_mobile": false,
+        "auto_play": false,
+        "change_bar_every": 5,
+        "image_position_desktop": "top",
+        "column_layout_desktop": "lg:w-1/3",
+        "spacing_desktop": 21,
+        "full_width": false,
+        "padding_full_width": false,
+        "show_section_divider": false,
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "image_position_mobile": "top",
+        "column_layout_mobile": "w-full",
+        "spacing_mobile": 16,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "a8d331b4-c073-4f2e-893f-b1e0516a7b79": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21376255066413__a8d331b4-c073-4f2e-893f-b1e0516a7b79-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "Our Factories",
+            "heading": "The Best Product",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Pretium ligula Vestibulum consequat convallis fringilla Vestibulu nulla.<br/>Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla interdum mauris tempor congue.<br/><br/>Aenean Lorem vitae id. Odio ut pretium ligula quam Vestibulum consequat convallis fringilla Vestibulum nulla. Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--21376255066413__a8d331b4-c073-4f2e-893f-b1e0516a7b79-heading-1"
+      ],
+      "settings": {
+        "show_hero": false,
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "image_corner_radius": 10,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "dashed",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "right",
+        "full_width": true,
+        "padding_full_width": false,
+        "top_padding": 64,
+        "bottom_padding": 0,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": true,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 0
+      }
+    },
+    "7fa8acc8-00de-4008-a2bc-909fa729ae94": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--21376255066413__7fa8acc8-00de-4008-a2bc-909fa729ae94-heading-1": {
+          "type": "heading",
+          "settings": {
+            "subheading": "Our Quality",
+            "heading": "Timeless Products",
+            "highlight_type": "underline",
+            "heading_base_size": 100,
+            "heading_tag": "h2",
+            "text": "<p>Pretium ligula Vestibulum consequat convallis fringilla Vestibulu nulla.<br/>Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla interdum mauris tempor congue.<br/><br/>Aenean Lorem vitae id. Odio ut pretium ligula quam Vestibulum consequat convallis fringilla Vestibulum nulla. Accumsan morbi tristique auctor. At risus pretium urna tortor metus fringilla.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "heading_light": "rgba(0,0,0,0)",
+            "text_light": "rgba(0,0,0,0)",
+            "color_heading_highlight_light": "rgba(0,0,0,0)",
+            "heading_dark": "rgba(0,0,0,0)",
+            "text_dark": "rgba(0,0,0,0)",
+            "color_heading_highlight_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "template--21376255066413__7fa8acc8-00de-4008-a2bc-909fa729ae94-heading-1"
+      ],
+      "settings": {
+        "show_hero": false,
+        "show_sound_control": false,
+        "video_url": "",
+        "video_alt_text": "",
+        "enable_video_autoplay": false,
+        "desktop_height": "550px",
+        "mobile_height": "400px",
+        "desktop_image_width": "medium",
+        "image_layout": "normal",
+        "image_corner_radius": 10,
+        "content_layout": "no-overlap",
+        "spacing_image": false,
+        "text_position": "center",
+        "text_alignment": "start",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "line_border": "dashed",
+        "icon_position": "col",
+        "icon_size": 45,
+        "alignment": "center",
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "heading_color_light": "rgba(0,0,0,0)",
+        "text_color_light": "rgba(0,0,0,0)",
+        "line_border_light": "rgba(0,0,0,0)",
+        "icon_color_light": "rgba(0,0,0,0)",
+        "heading_color_dark": "rgba(0,0,0,0)",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "line_border_dark": "rgba(0,0,0,0)",
+        "icon_color_dark": "rgba(0,0,0,0)",
+        "image_alignment": "left",
+        "full_width": false,
+        "padding_full_width": false,
+        "top_padding": 0,
+        "bottom_padding": 0,
+        "image_alignment_mobile": "left",
+        "full_width_mobile": false,
+        "top_padding_mobile": 0,
+        "bottom_padding_mobile": 0
+      }
+    },
+    "9c72246f-d24e-480d-8d8c-f77e2b167c75": {
+      "type": "logo-list",
+      "blocks": {
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-1": {
+          "type": "logo",
+          "settings": {
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-2": {
+          "type": "logo",
+          "settings": {
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-3": {
+          "type": "logo",
+          "settings": {
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-4": {
+          "type": "logo",
+          "settings": {
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-5": {
+          "type": "logo",
+          "settings": {
+            "image_link": "",
+            "open_new_window": false
+          }
+        },
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-6": {
+          "type": "logo",
+          "settings": {
+            "image_link": "",
+            "open_new_window": false
+          }
+        }
+      },
+      "block_order": [
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-1",
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-2",
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-3",
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-4",
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-5",
+        "template--21376255066413__9c72246f-d24e-480d-8d8c-f77e2b167c75-logo-6"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Shop by Brand",
+        "highlight_type": "underline",
+        "heading_size": 100,
+        "heading_tag": "h2",
+        "heading_alignment": "center",
+        "corner_image": 6,
+        "show_border": false,
+        "image_ratio": "auto",
+        "background_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "enable_carousel_on_desktop": false,
+        "auto_switch_bar": true,
+        "change_bar_every": 5,
+        "show_navigation": true,
+        "columns_desktop": 6,
+        "full_width": false,
+        "show_section_divider": false,
+        "spacing": 18,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "layout_mobile": "carousel",
+        "columns_mobile": "2",
+        "show_section_divider_mobile": false,
+        "spacing_mobile": 16,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "7e72a3d4-faf0-43a8-a287-c52f0af42c00",
+    "main",
+    "cba3e9a6-5e16-43dc-8224-fa088145ceef",
+    "31d5bd62-8437-48ea-bfea-212abb02302d",
+    "74d09ba9-706f-470b-adbb-065b7409ddd7",
+    "a8d331b4-c073-4f2e-893f-b1e0516a7b79",
+    "7fa8acc8-00de-4008-a2bc-909fa729ae94",
+    "9c72246f-d24e-480d-8d8c-f77e2b167c75"
+  ]
+}

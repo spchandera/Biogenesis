@@ -1,0 +1,191 @@
+:root, *:before {
+    --base-font-size: 1.05rem;
+    --font-size-medium-mobile: 1.08rem;
+    --font-size-medium: 1.2rem;
+    --font-size-small: 0.75rem;
+    --font-size-small-mobile: 0.675rem;
+    --font-size-normal: 0.9rem;
+    --font-size-normal-mobile: 0.81rem;
+    --font-size-large: 1.5rem;
+    --font-size-large-mobile: 1.35rem;
+    --heading-highlight-font-size: 100%;
+    --h1-font-size: 4.59rem;
+    --h2-font-size: 2.7rem;
+    --h3-font-size: 1.62rem;
+    --h4-font-size: 1.485rem;
+    --h5-font-size: 1.35rem;
+    --h6-font-size: 1.215rem;
+    --base-font-size-mobile: 0.945rem;
+    --h1-font-size-mobile: 2.295rem;
+    --h2-font-size-mobile: 1.62rem;
+    --h3-font-size-mobile: 1.134rem;
+    --h4-font-size-mobile: 1.0395rem;
+    --h5-font-size-mobile: 0.945rem;
+    --h6-font-size-mobile: 0.8505rem;
+    --rating-star-size: 0.84rem;
+    --border-radius: 100px;
+    --page-width: 1600px;
+    --width-countdown: 9.45rem;
+    --font-menu: Helvetica Neue;
+    --font-menu-weight: 400;
+    --font-menu-style: normal;
+    --font-button: Gotham;
+    --font-button-weight: 700;
+    --font-button-style: normal;
+    --font-body-family: Gotham;
+    --font-body-style: normal;
+    --font-body-weight: 500;
+    --font-heading-family: Helvetica Neue;
+    --font-heading-highlight: Helvetica Neue;
+    --font-heading-highlight-style: normal;
+    --font-heading-highlight-weight: 400;
+    --font-heading-style: normal;
+    --font-heading-weight: 900;
+    --heading-text-tranform: none;
+    --advanced-sections-spacing: 0px;
+    --divider-spacing: -0;
+    --colors-pulse-speech: 251, 133, 0;
+    --image-treatment-overlay: 255, 255, 255;
+    --image-treatment-text: 255, 255, 255;
+    --colors-line-and-border: 60, 100, 92;
+    --colors-line-and-border-base: 60, 100, 92;
+    --colors-line-header: 33, 81, 76;
+    --colors-line-footer: 236, 208, 135;
+    --colors-background: 251, 247, 242;
+    --colors-text: 51, 51, 51;
+    --colors-heading: 33, 81, 76;
+    --colors-heading-base: 33, 81, 76;
+    --colors-background-secondary: 224, 224, 203;
+    --colors-text-secondary: 51, 51, 51;
+    --colors-heading-secondary: 33, 81, 76;
+    --colors-text-link: 169, 199, 82;
+    --background-color: 251, 247, 242;
+    --background-color-header: 33, 81, 76;
+    --colors-text-header: 236, 208, 135;
+    --background-color-footer: 33, 81, 76;
+    --colors-text-footer: 236, 237, 223;
+    --colors-heading-footer: 236, 208, 135;
+    --colors-text-link-footer: 224, 224, 203;
+    --color-error: 169, 0, 0;
+    --color-success: 25, 155, 114;
+    --colors-price: 33, 81, 76;
+    --colors-price-sale: 169, 0, 0;
+    --colors-button-text: 236, 237, 223;
+    --colors-button: 33, 81, 76;
+    --colors-button-text-hover: 236, 237, 223;
+    --colors-secondary-button: 33, 81, 76;
+    --colors-button-hover: rgb(16, 51, 41);
+    --colors-cart: 107, 112, 80;
+    --colors-cart-text: 255, 255, 255;
+    --colors-icon-rating: 236, 208, 135;
+    --colors-transition-arrows: 0, 0, 0;
+    --color-highlight: #000000;
+    --background-pagination-slideshow: 32, 32, 32;
+    --text-color-pagination-slideshow: 255, 255, 255;
+    --background-secondary-button: transparent;
+    --colors-line-secondary-button: 33, 81, 76;
+    --height-parallax: 100%;
+    --image-zoom: 1.05;
+    --card-product-bg: #ffffff;
+    --card-product-padding: 20px;
+    --card-product-padding-mobile: 10px;
+    --card-product-alignment: left;
+    --width-scrollbar: 0;
+    --card-product-ratio: 133.0%;
+    --card-product-img-position: absolute;
+    --card-product-img-height: 0;
+    --card-product-img-zoom: scale(1.1);
+    --height-header: 0px;
+    --transition-card-loading: 600ms;
+    --transition-card-image-hover: 500ms;
+    --transition-slideshow: 600ms;
+    --transition-image-hover: 600ms;
+}
+#klaviyo-bis-modal #container {
+  background: #fbf7f2;
+}
+#klaviyo-bis-modal .klaviyo-bis-close {
+  position: absolute;
+  color: #000;
+}
+#klaviyo-bis-modal .modal-title {
+  font-size: 26px;
+  line-height: 1.125;
+}
+#klaviyo-bis-modal p {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+#klaviyo-bis-modal .input-lg {
+  height: 50px;
+  padding: .55rem 1.5rem .5rem;
+  line-height: 50px;
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  color: rgb(var(--colors-text));
+  border: 1px solid rgba(var(--colors-line-and-border),1);
+  border-radius: 50px;
+  font-size: 16.8px;
+}
+#klaviyo-bis-modal .input-lg::placeholder {
+  color: rgb(var(--colors-text));
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
+  font-size: 14px;
+}
+#klaviyo-bis-modal #newsletter_subscription p {
+  display: flex;
+  margin: 2px 0 0;
+  font-size: 12px;
+}
+#klaviyo-bis-modal .submit-container .btn {
+  background: #000;
+  border: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 15px 10px 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+#klaviyo-bis-modal .submit-container .btn:hover {
+  background: var(--colors-button-hover);
+}
+#klaviyo-bis-modal p:empty {
+  display: none;
+}
+#klaviyo-bis-modal .completed_message,
+#klaviyo-bis-modal .error_message {
+  border-radius: 6px;
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+#klaviyo-bis-modal .alert-success {
+  background-color: #c3db7e;
+  border-color: #c3db7e;
+  color: #103329;
+}
+#klaviyo-bis-modal .submit-container {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  #klaviyo-bis-modal .modal-title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 499px) {
+  #klaviyo-bis-modal #container {
+    padding: 20px;
+  }
+  #klaviyo-bis-modal .modal-title {
+    padding-right: 16px;
+  }
+  #klaviyo-bis-modal .input-lg {
+    font-size: 15px;
+  }
+  #klaviyo-bis-modal .submit-container .btn {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,13 @@
+/* .button-action, button.button-solid, .button.button-solid, button.button-outline, .button.button-outline { 
+    padding-top: 0px;
+    padding-bottom: 0px;
+} */
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-col-text.py-4.border-b {
+    padding: 0;
+  }
+div#items-grid {
+    column-gap: 15px;
+    row-gap: 15px;
+}
+}

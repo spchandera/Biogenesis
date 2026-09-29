@@ -1,0 +1,27 @@
+{% if block.settings.custom_class != blank %}
+<div class="group-block-wraper {{ block.settings.custom_class }}">
+{% endif %}
+{% content_for "blocks" %}
+{% if block.settings.custom_class != blank %}
+</div>
+{% endif %}
+
+{% schema %}
+{
+    "name": "Group",
+    "class": "dynamic-block-group",
+    "blocks": [{"type": "@theme"}],
+    "settings": [
+       {
+          "type": "text",
+          "id": "custom_class",
+          "label": "Custom class"
+        }
+    ],
+   "presets": [
+     {
+        "name": "Group"
+     }
+    ]
+}
+{% endschema %}

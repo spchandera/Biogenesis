@@ -1,0 +1,355 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "promotion_banner_a7yEQn": {
+      "type": "promotion-banner",
+      "blocks": {
+        "image_banner_rEi3bG": {
+          "type": "image_banner",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "highlight_type": "underline",
+            "heading_size": 170,
+            "heading_tag": "h1",
+            "subheading": "",
+            "text": "",
+            "text_size": 130,
+            "content_box_type": "square",
+            "add_frame": false,
+            "color_content_box_light": "rgba(0,0,0,0)",
+            "color_content_box_dark": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_banner_rEi3bG"
+      ],
+      "settings": {
+        "heading": "Shipping Policy",
+        "image": "shopify://shop_images/BioGenesis_Label_Background_2.png",
+        "image_link": "",
+        "open_new_window": false,
+        "image_overlay_opacity": 0,
+        "content_position": "center",
+        "content_horizontal": 50,
+        "content_vertical": 50,
+        "position_content_mobile": "center",
+        "content_alignment": "center",
+        "show_hero": true,
+        "full_width": true,
+        "padding_full_width": false,
+        "rounded_corner_image": false,
+        "desktop_height": "450px",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "full_width_mobile": true,
+        "rounded_corner_image_mobile": false,
+        "mobile_height": "250px",
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "rich_text_TwR6Nr": {
+      "type": "rich-text",
+      "blocks": {
+        "breadcrumbs_8N7tLm": {
+          "type": "breadcrumbs",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "breadcrumbs_8N7tLm"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "background_color_light": "#fbf7f2",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "content_alignment": "left",
+        "show_section_divider": false,
+        "make_full_page_width": true,
+        "padding_top": 24,
+        "padding_bottom": 8,
+        "content_alignment_mobile": "left",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_heading": false,
+        "heading_size": 170,
+        "heading_tag": "h1",
+        "show_breadcrumbs": false,
+        "show_breadcrumbs_border": false,
+        "full_width_breadcrumb": true,
+        "desktop_content_alignment": "text-left",
+        "mobile_content_alignment": "text-left",
+        "background_color_light": "#f2f2f2",
+        "text_color_light": "rgba(0,0,0,0)",
+        "textlink_color_light": "rgba(0,0,0,0)",
+        "background_color_dark": "#313131",
+        "text_color_dark": "rgba(0,0,0,0)",
+        "textlink_color_dark": "rgba(0,0,0,0)",
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 20
+      }
+    },
+    "rich_text_PikEiB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AApD36": {
+          "type": "heading",
+          "settings": {
+            "heading": "Standard Post Australia",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "text_wja9LM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Probably best to go with the earliest which is NT so <strong>16th December</strong>.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "alt_text_style": false
+          }
+        },
+        "button_KNRfKQ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style_1": "primary",
+            "button_label_2": "",
+            "open_new_window_button_2": false,
+            "button_link_2": "",
+            "show_button_style_2": "primary",
+            "color_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "caption_iaYU63": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "uppercase",
+            "text_size": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_AApD36",
+        "text_wja9LM",
+        "button_KNRfKQ",
+        "caption_iaYU63"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "content_alignment": "center",
+        "show_section_divider": false,
+        "make_full_page_width": true,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "content_alignment_mobile": "center",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "custom_liquid_NAhWm4": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"table-overflow standard-table\">\n<table style=\"width:100%; border-collapse: collapse;\" class=\"table-wrapper\">\n  <tr style=\"background-color:#21514c; color:#fff;\">\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">Sending from</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To NSW*</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To ACT</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To VIC*</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To QLD*</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To SA</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To WA</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To TAS</th>\n    <th style=\"border:1px solid #D3D3D3; padding:10px;\">To NT</th>\n  </tr>\n\n  <tr style=\"background-color:#fff;\">\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">NSW*</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Mon 22/12</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Fri 19/12</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Fri 19/12</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Fri 19/12</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Fri 19/12</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Thu 18/12</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Fri 19/12</td>\n    <td style=\"border:1px solid #D3D3D3; padding:10px;\">Tue 16/12</td>\n  </tr>\n</table>\n</div>",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "rich_text_63x6Mp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LFf6ek": {
+          "type": "heading",
+          "settings": {
+            "heading": "Express Australia",
+            "highlight_type": "underline",
+            "heading_size": 100,
+            "heading_tag": "h2"
+          }
+        },
+        "text_yUm9T4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The dates provided below are for Express Post items being sent to/from metro locations. For Express Post items being sent outside a metro area, please allow additional time.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "alt_text_style": false
+          }
+        },
+        "button_UWkWDK": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "open_new_window_button": false,
+            "show_button_style_1": "primary",
+            "button_label_2": "",
+            "open_new_window_button_2": false,
+            "button_link_2": "",
+            "show_button_style_2": "primary",
+            "color_button": "rgba(0,0,0,0)",
+            "color_button_hover": "rgba(0,0,0,0)",
+            "color_text_button": "rgba(0,0,0,0)",
+            "color_text_button_hover": "rgba(0,0,0,0)",
+            "color_button_secondary": "rgba(0,0,0,0)",
+            "secondary_button_text": "rgba(0,0,0,0)",
+            "colors_text_link": "rgba(0,0,0,0)"
+          }
+        },
+        "caption_DgyJNh": {
+          "type": "caption",
+          "disabled": true,
+          "settings": {
+            "caption": "Add a tagline",
+            "text_style": "uppercase",
+            "text_size": 100
+          }
+        }
+      },
+      "block_order": [
+        "heading_LFf6ek",
+        "text_yUm9T4",
+        "button_UWkWDK",
+        "caption_DgyJNh"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "content_alignment": "center",
+        "show_section_divider": false,
+        "make_full_page_width": true,
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "content_alignment_mobile": "center",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "custom_liquid_bghxF4": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"table-overflow\">\n<table style=\"width:100%; border-collapse: collapse;\" class=\"table-wrapper\">\n  <!-- Header Row -->\n  <tr style=\"background-color:#21514c; color:#fff; font-weight:bold; text-align:left;\">\n    <th style=\"border:1px solid #D3D3D3; padding:14px;\">Sending to/from metro only</th>\n    <th style=\"border:1px solid #D3D3D3; padding:14px;\">Cut-off date</th>\n  </tr>\n\n  <!-- Row 1 -->\n  <tr style=\"background-color:#fff;\">\n    <td style=\"border:1px solid #D3D3D3; padding:14px;\">\n      NSW, ACT, VIC, QLD, SA and within same state*\n    </td>\n    <td style=\"border:1px solid #D3D3D3; padding:14px;\">\n      23 December 2025\n    </td>\n  </tr>\n\n  <!-- Row 2 -->\n  <tr style=\"background-color:#ffffff;\">\n    <td style=\"border:1px solid #D3D3D3; padding:14px;\">\n      NT, TAS and WA\n    </td>\n    <td style=\"border:1px solid #D3D3D3; padding:14px;\">\n      22 December 2025\n    </td>\n  </tr>\n</table>\n</div>",
+        "full_width": false,
+        "show_section_divider": false,
+        "padding_top": 0,
+        "padding_bottom": 28,
+        "full_width_mobile": false,
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 28
+      }
+    },
+    "rich_text_qXynJF": {
+      "type": "rich-text",
+      "blocks": {
+        "text_dNU9dT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Parcels sent to/from Geelong, Gold Coast and Newcastle follow the above metro location last sending dates.</p>",
+            "number_of_lines_shown": "none",
+            "read_more_label": "Read more",
+            "see_less_label": "See less",
+            "alt_text_style": false
+          }
+        }
+      },
+      "block_order": [
+        "text_dNU9dT"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "heading_light": "rgba(0,0,0,0)",
+        "text_light": "rgba(0,0,0,0)",
+        "color_heading_highlight_light": "rgba(0,0,0,0)",
+        "background_color_light": "rgba(0,0,0,0)",
+        "heading_dark": "rgba(0,0,0,0)",
+        "text_dark": "rgba(0,0,0,0)",
+        "color_heading_highlight_dark": "rgba(0,0,0,0)",
+        "background_color_dark": "rgba(0,0,0,0)",
+        "content_alignment": "center",
+        "show_section_divider": false,
+        "make_full_page_width": true,
+        "padding_top": 0,
+        "padding_bottom": 56,
+        "content_alignment_mobile": "center",
+        "show_section_divider_mobile": false,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 28
+      }
+    }
+  },
+  "order": [
+    "promotion_banner_a7yEQn",
+    "rich_text_TwR6Nr",
+    "main",
+    "rich_text_PikEiB",
+    "custom_liquid_NAhWm4",
+    "rich_text_63x6Mp",
+    "custom_liquid_bghxF4",
+    "rich_text_qXynJF"
+  ]
+}

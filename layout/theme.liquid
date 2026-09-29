@@ -1,0 +1,379 @@
+<!doctype html>
+<html
+  class="no-js{% if settings.theme_mode_default == "dark" %} dark{% endif %}"
+  lang="{{ request.locale.iso_code }}"
+  {% if settings.lang_direction contains request.locale.iso_code %}
+    dir="rtl"
+  {% endif %}
+>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="">
+    {% if settings.show_canonical_url_collection and template.name == 'collection' %}
+      <link rel="canonical" href="{{ canonical_url | split: '?' | first }}">
+    {% else %}
+      <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+    {%- endif -%}
+
+    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+    <link rel="preconnect" href="https://static.klaviyo.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.rebuyengine.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://connect.facebook.net">
+    <link rel="dns-prefetch" href="https://analytics.tiktok.com">
+    <link rel="dns-prefetch" href="https://monorail-edge.shopifysvc.com">
+
+    {%- if template contains 'product' -%}
+      {% if page_title != product.title %}
+        <title>{{ page_title }}</title>
+      {% else %}
+        <title>{{ product.title }}</title>
+      {% endif %}
+    {%- elsif template contains 'collection' -%}
+      {% if page_title != collection.title %}
+        <title>{{ page_title }}</title>
+      {% else %}
+        <title>
+          {{ collection.title }}
+          Collections by
+          {{ shop.name }}
+        </title>
+      {% endif %}
+    {%- elsif settings.enable_tab_attention -%}
+      {%- if settings.message_1 != blank or settings.message_2 != blank -%}
+        <title
+          x-data="
+            xTabAttention({
+              pageTitle: '{{ page_title }}',
+              message1: '{{ settings.message_1 }}',
+              message2: '{{ settings.message_2 }}',
+              delay: {{ settings.message_delay }}
+            })
+          "
+        >
+        </title>
+        <script src="{{ 'tab-attention.js' | asset_url }}" defer></script>
+      {% else %}
+        <title>
+          {% if current_tags %}
+            Tagged "{{ current_tags | join: ', ' }}" – {{ shop.name }}
+          {% else %}
+            {{ page_title }}
+            {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+            {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+          {% endif %}
+        </title>
+      {%- endif -%}
+    {%- else -%}
+      <title>
+        {{ page_title }}
+        {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+        {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+        {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      </title>
+    {%- endif -%}
+
+    {%- if template contains 'product' -%}
+      {% if product.description != blank %}
+        <meta name="description" content="{{ product.description | strip_html | truncate: 150 }}">
+      {%- elsif page_description != blank -%}
+        <meta name="description" content="{{ page_description | strip_html | truncate: 150 }}">
+      {%- else -%}
+        <meta
+          name="description"
+          content="{{ shop.name }} offers high-quality products tailored to your needs. Buy {{ product.title }}"
+        >
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if template contains 'collection' -%}
+      {%- if page_description != blank -%}
+        <meta name="description" content="{{ page_description | strip_html | truncate: 160 }}">
+      {%- else -%}
+        <meta
+          name="description"
+          content="{{ shop.name }} offers high-quality collections of {{ collection.title }} products tailored to your needs. Shop Now!"
+        >
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if settings.enable_organization_schema and template.name == 'index' -%}
+      {% liquid
+        if settings.business_address_1 != null
+          assign first_business_addr = settings.business_address_1 | split: ','
+        endif
+        if settings.business_address_2 != null
+          assign second_business_addr = settings.business_address_2 | split: ','
+        endif
+      %}
+
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "{{ settings.site_type }}",
+          "name": "{{ settings.business_name }}",
+          "description": "{{ settings.business_description }}",
+          {% if settings.business_logo != blank %}
+          "logo": {{ settings.business_logo | image_url: width: 112 | prepend: "https:" | json }},
+          {% endif %}
+          "telephone": "{{ settings.business_phone }}",
+          "address": [{
+            "@type": "PostalAddress",
+            "streetAddress": "{{ first_business_addr[0] }}",
+            "addressLocality": "{{ first_business_addr[1] }}",
+            "addressRegion": "{{ first_business_addr[2] }}",
+            "postalCode": "{{ first_business_addr[3] }}",
+            "addressCountry": "{{ first_business_addr[4] }}"
+          },{
+            "streetAddress": "{{ second_business_addr[0] }}",
+            "addressLocality": "{{ second_business_addr[1] }}",
+            "addressRegion": "{{ second_business_addr[2] }}",
+            "postalCode": "{{ second_business_addr[3] }}",
+            "addressCountry": "{{ second_business_addr[4] }}"
+          }],
+          "email": "{{ settings.business_email }}"
+        }
+      </script>
+    {%- endif -%}
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+    <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="{{ settings.type_body_font | font_url }}"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    >
+
+    {% liquid
+      render 'meta-tags'
+      render 'font-face'
+      echo 'theme.css' | asset_url | stylesheet_tag: preload: true
+      render 'css-variables'
+      render 'theme-mode-control'
+    %}
+    {% if request.page_type == 'policy' %}
+      {{ 'page.css' | asset_url | stylesheet_tag: preload: true }}
+    {% endif %}
+    {{ content_for_header }}
+    {{ settings.additional_head }}
+
+    {% liquid
+      assign menu_font_400 = settings.type_menu_font | font_modify: 'weight', '400'
+    %}
+
+    {% style %}
+      {{ menu_font_400 | font_face: font_display: 'swap' }}
+    {% endstyle %}
+    {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'custom-style.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'geo-faq-widget-fix.css' | asset_url | stylesheet_tag: preload: true }}
+    <img
+      src="www.biogenesisnatural.com/cdn/shop/files/Mobile_1_64e45627-8ffd-4925-8605-3d8cb691367a.jpg?v=1780640491&amp;width=1500"
+      alt=""
+      srcset="www.biogenesisnatural.com/cdn/shop/files/Mobile_1_64e45627-8ffd-4925-8605-3d8cb691367a.jpg?v=1780640491&amp;width=375 375w, www.biogenesisnatural.com/cdn/shop/files/Mobile_1_64e45627-8ffd-4925-8605-3d8cb691367a.jpg?v=1780640491&amp;width=450 450w, www.biogenesisnatural.com/cdn/shop/files/Mobile_1_64e45627-8ffd-4925-8605-3d8cb691367a.jpg?v=1780640491&amp;width=750 750w, www.biogenesisnatural.com/cdn/shop/files/Mobile_1_64e45627-8ffd-4925-8605-3d8cb691367a.jpg?v=1780640491&amp;width=900 900w, www.biogenesisnatural.com/cdn/shop/files/Mobile_1_64e45627-8ffd-4925-8605-3d8cb691367a.jpg?v=1780640491&amp;width=1100 1100w, www.biogenesisnatural.com/cdn/shop/files/Mobile_1_64e45627-8ffd-4925-8605-3d8cb691367a.jpg?v=1780640491&amp;width=1500 1500w"
+      imagesizes="100vw"
+      fetchpriority="high"
+      loading="eager"
+      width=""
+      height=""
+    >
+  </head>
+  <body
+    class="gradient template-{{ template.name }} template-suffix-{{ template.suffix }} page-{{ request.page_type }} scrollbar-body overflow-x-hidden text-[{{ settings.text_base_size | times: 0.007875 }}rem] md:text-[{{ settings.text_base_size | times: 0.00875 }}rem]{% if settings.lang_direction contains request.locale.iso_code %} rtl{% endif %}"
+    x-data="{ runDispatch: true }"
+    :class="($store.xPopup.open || $store.xPopup.openVideoShopping) && 'overflow-hidden padding-scrollbar'"
+    x-init="$store.xPopup.setWidthScrollbar();{% if request.design_mode %} document.addEventListener('shopify:section:load', ()=>{ runDispatch = true }){% endif %}"
+    x-on:mouseover="if (runDispatch) { $dispatch('init-run'); runDispatch = false; }"
+    x-on:touchstart="
+      if (runDispatch) {
+        if (event.target.parentNode.parentNode.id == 'SearchOpen' || event.target.parentNode.id == 'SearchOpen') { setTimeout(() => {  document.querySelector('#SearchOpen').click() }, 200) }
+        if (event.target.parentNode.parentNode.id == 'cart-icon' || event.target.parentNode.id == 'cart-icon') { setTimeout(() => {  document.querySelector('#cart-icon').click() }, 200) }
+        if (event.target.parentNode.id == 'mobile-navigation' || event.target.id == 'mobile-navigation') { setTimeout(() => {  document.querySelector('#mobile-navigation').click() }, 200) }
+        $dispatch('init-run'); runDispatch = false;
+      }
+    "
+  >
+    {%- if settings.page_transition -%}
+      <div
+        x-data="{ loading: true }"
+        x-intersect="
+          window.onload = () => {
+            loading = false;
+            setTimeout(() => {
+              $el.remove();
+            }, 1000);
+          }
+        "
+        x-show="loading"
+        x-transition:leave="transition-all ease-in-out duration-1000"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        class="fixed top-0 left-0 w-full h-full bg-black z-[9999]"
+      ></div>
+    {%- endif -%}
+    <div class="main-container flex flex-col min-h-screen relative">
+      <a
+        class="skip-to-content absolute -z-10 button button-solid hidden lg:block pt-2.5 pb-2.5 pl-6 pr-6 lg:pt-3 lg:pb-3 mt-0.5 ml-0.5 leading-normal justify-center cursor-pointer focus-visible:z-60"
+        href="#MainContent"
+      >
+        {{ 'accessibility.skip_to_text' | t }}
+      </a>
+
+      {% case settings.selected_preset %}
+        {% when 'breath' %}
+          {% sections 'header-group-breath' %}
+        {% when 'swirl' %}
+          {% sections 'header-group-swirl' %}
+        {% when 'whiff' %}
+          {% sections 'header-group-whiff' %}
+        {% when 'puff' %}
+          {% sections 'header-group-puff' %}
+        {% else %}
+          {% sections 'header-group' %}
+      {% endcase %}
+
+      {% case settings.selected_preset %}
+        {% when 'breath' %}
+          {% sections 'aside-group-breath' %}
+        {% when 'swirl' %}
+          {% sections 'aside-group-swirl' %}
+        {% when 'whiff' %}
+          {% sections 'aside-group-whiff' %}
+        {% when 'puff' %}
+          {% sections 'aside-group-puff' %}
+        {% else %}
+          {% sections 'aside-group' %}
+      {% endcase %}
+      {% if settings.enable_save_share_cart and content_for_header contains 'share_cart:true' %}
+        <div
+          x-init="if (runDispatch) { $dispatch('init-run'); runDispatch = false; }"
+          class="z-[100] bg-black opacity-40 fixed top-0 right-0 bottom-0 left-0"
+          :class="$store.xCartHelper.shared && 'hidden'"
+        >
+          <div class="lg:inline-block text-white animate-spin w-4 h-4 md:w-10 md:h-10 absolute top-[calc(50%-8px)] left-[calc(50%-8px)] md:top-[calc(50%-10px)] md:left-[calc(50%-10px)]">
+            {% render 'icon-alls', icon: 'icon-loading' %}
+          </div>
+        </div>
+      {% endif %}
+      <main
+        id="MainContent"
+        class="content-for-layout focus-none outline-none grow theme-template-{{ template.name }} theme-template-suffix-{{ template.suffix | default: 'none' }}"
+        role="main"
+        tabindex="-1"
+      >
+        {{ content_for_layout }}
+      </main>
+
+      {% case settings.selected_preset %}
+        {% when 'breath' %}
+          {% sections 'footer-group-breath' %}
+        {% when 'swirl' %}
+          {% sections 'footer-group-swirl' %}
+        {% when 'whiff' %}
+          {% sections 'footer-group-whiff' %}
+        {% when 'puff' %}
+          {% sections 'footer-group-puff' %}
+        {% else %}
+          {% sections 'footer-group' %}
+      {% endcase %}
+
+      {% render 'popups' %}
+
+      {% if settings.enable_scroll_top_desktop or settings.enable_scroll_top_mobile %}
+        {% render 'scroll-to-top' %}
+      {% endif %}
+
+      {% render 'popup-price-detail' %}
+    </div>
+    <ul hidden>
+      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+      <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
+    </ul>
+    <script>
+      window.Eurus = {
+        sliderScript: '{{ 'splide4.1.3.js' | asset_url }}',
+        cart_error: `{{ 'sections.cart.cart_error' | t }}`,
+        cart_quantity_error_html: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`,
+        loadedScript: [],
+        cart_add_url: '{{ routes.cart_add_url }}'
+      };
+    </script>
+    {%- if settings.enable_featured_discount -%}
+      <script src="{{ 'coupon-code.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    {%- if settings.show_cart_custom_field and settings.cart_custom_field_label != blank -%}
+      <script src="{{ 'cart-fields.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    {%- if settings.cart_enable_terms_and_conditions -%}
+      <script src="{{ 'cart-term.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    {% if settings.enable_upsell_minicart %}
+      <script src="{{ 'product-recommendations.js' | asset_url }}" defer></script>
+    {% endif %}
+    {%- if settings.enable_estimate_shipping -%}
+      <script src="{{ 'estimate-shipping-rate.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    {% if settings.swatches_type == 'both_text_and_color' %}
+      <script src="{{ 'preview-color-swatches.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    {%- if request.design_mode -%}
+      <script src="{{ 'theme-editor-alpine-custom.js' | asset_url }}" defer></script>
+      <script src="{{ 'theme-editor.js' | asset_url }}" defer></script>
+    {%- endif -%}
+    <script src="{{ 'theme.js' | asset_url }}" defer></script>
+    <script src="{{ 'vendors.js' | asset_url }}" defer></script>
+    <script>
+      window.addEventListener("load", (event) => {
+        deferScriptLoad('instant.page', '{{ 'instant.page.v5.1.1.js' | asset_url }}', () => {}, true);
+      });
+    </script>
+
+    <script>
+      document.querySelector('#cart-icon').addEventListener('click', function (event) {
+        event.preventDefault();
+        Rebuy.SmartCart.show();
+      });
+
+      function mobileMenuToggle(element) {
+        let menuDrawer = element.parentElement.querySelector('.menu-drawer');
+        if (menuDrawer) {
+          element.classList.toggle('menu-active');
+          menuDrawer.classList.toggle('menu-opening');
+        }
+      }
+    </script>
+
+    <!--
+      <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".announcement-act > a").forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              window.scrollTo({
+                top: target.offsetTop - 150,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+      </script>
+    -->
+    {% render 'klaviyo-bis' %}
+    <script async src="https://cdn.rebuyengine.com/onsite/js/rebuy.js?shop={{ shop.permanent_domain }}"></script>
+  </body>
+</html>

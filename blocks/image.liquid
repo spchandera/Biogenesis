@@ -1,0 +1,23 @@
+{% if block.settings.image != blank %}
+<div class="block-image-wrap">
+<img src="{{ block.settings.image | image_url }}" >
+</div>
+{% endif %}
+{% schema %}
+{
+    "name": "Image",
+    "class": "dynamic-block-image",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Image"
+        }
+    ]
+}
+{% endschema %}

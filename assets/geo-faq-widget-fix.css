@@ -1,0 +1,102 @@
+/* ------------------------------------------------------------
+ * Alinga GEO FAQ Widget — mobile overflow, typing-bar ellipsis,
+ * and font matching to the site's "Us vs Them" comparison-table
+ * style.
+ * Loaded globally via layout/theme.liquid, so this applies to every
+ * "alinga_faq_widget" block instance across every product page.
+ *
+ * Targets the widget's real rendered markup:
+ *   #af-widget-{block.id}   .af-inner   .af-bar   .af-bar__text
+ *   .af-item   .af-item__header   .af-item__q   .af-item__answer
+ *
+ * Font note: matched to the comparison-table section's row/column
+ * label style (.criterion-detail-heading span / .table-header span),
+ * which computes to Gotham, 500 weight, 14px — used as the fixed
+ * target here instead of the sitewide --font-body-weight/size vars,
+ * since that section is the reference the FAQ widget should read
+ * consistent with.
+ * ------------------------------------------------------------ */
+
+[id^="af-widget-"] {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+  font-family: var(--font-body-family) !important;
+  font-weight: 500 !important;
+}
+
+[id^="af-widget-"] .af-inner {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.af-bar {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Typing pill text: kept italic (it's the "typing a question" cue),
+   but sized/weighted to match the comparison-table label style, and
+   the ONLY place questions should be truncated with an ellipsis
+   while they type/animate in. */
+.af-bar__text {
+  min-width: 0 !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  font-family: var(--font-body-family) !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+
+/* FAQ accordion question headings: show the full question and wrap
+   normally — never truncate these with "...". */
+.af-item__q {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  overflow-wrap: break-word !important;
+  font-family: var(--font-body-family) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.af-item__answer {
+  font-family: var(--font-body-family) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.af-close-bottom {
+  font-family: var(--font-body-family) !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.af-item__header {
+  min-width: 0;
+}
+
+/* When an item is open, the icon's background switches to the dark
+   accent colour — the plus/close icon needs to be white to stay
+   visible against it (it was defaulting to near-black and vanishing). */
+.af-item.af-open .af-item__icon {
+  color: #fff !important;
+}
+
+@media (max-width: 749px) {
+  [id^="af-widget-"] .af-bar {
+    padding: 12px 14px 12px 18px !important;
+    gap: 8px !important;
+  }
+
+  .af-item__header {
+    padding: 14px 16px !important;
+  }
+
+  .af-item__answer {
+    padding: 0 16px 16px !important;
+  }
+}

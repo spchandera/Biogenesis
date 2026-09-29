@@ -1,0 +1,33 @@
+{%- if block.settings.heading != blank and block.settings.text != blank -%}
+<div class="heading-with-text-wrap">
+  {% if block.settings.heading != blank %}
+    <h2 class="block-heading heading-text">{{ block.settings.heading }}</h2> 
+  {% endif %}
+  {% if block.settings.text != blank %}
+    <div class="block-text rich-text"><div class="rte">{{ block.settings.text }}</div></div>
+  {% endif %}
+</div>
+{%- endif -%}
+{% schema %}
+{
+    "name": "Heading with text",
+    "class": "dynamic-block-heading-text",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Heading with text"
+        }
+    ]
+}
+{% endschema %}
